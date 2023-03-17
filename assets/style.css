@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --nord0:  #2e3440;
+    --nord1:  #3b4252;
+    --nord2:  #434c5e;
+    --nord3:  #4c566a;
+    --nord4:  #d8dee9;
+    --nord5:  #e5e9f0;
+    --nord6:  #eceff4;
+    --nord7:  #8fbcbb;
+    --nord8:  #88c0d0;
+    --nord9:  #81a1c1;
+    --nord10: #5e81ac;
+    --nord11: #bf616a;
+    --nord12: #d08770;
+    --nord13: #ebcb8b;
+    --nord14: #a3be8c;
+    --nord15: #b48ead;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--nord6);
+}
+
+header {
+  background-color: var(--nord6);
+  color: var(--nord0);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+}
+
+header img {
+  width: 5%;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: calc(100vh - 200px);
+}
+
+section {
+  width: 40%;
+  margin: 20px;
+  padding: 20px;
+}
+
+#inputArea {
+  width: 140%;
+  height: 80%;
+  border: none;
+  color: #0a3871;
+  margin-top: 65px;
+  text-transform: lowercase;
+  font-size: 38px;
+  background-color: var(--nord6);
+  resize: none;
+}
+::placeholder {
+  color: #0a3871;
+}
+#inputArea:focus {
+  outline: none;
+}
+
+#outputArea {
+  width: 60%;
+  height: 100%;
+  margin-left: 40%;
+  border: none;
+  border-radius: 24px;
+  color: #0a3871;
+  padding: 5px 20px;
+  font-size: 28px;
+  resize: none;
+  background-color: var(--nord5);
+}
+
+#outputArea :focus {
+  outline: none;
+}
+
+.sct-btn {
+  margin-top: 15px;
+}
+
+#btnCripto {
+  background-color: var(--nord3);
+  border: 1px solid var(--nord3);
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  width: 300px;
+  text-transform: uppercase;
+}
+
+#btnDecripto {
+    background: var(--nord4);
+    border: 1px solid var(--nord3);
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    padding: 20px;
+    width: 300px;
+    margin-left: 25px;
+    text-transform: uppercase;
+  }
+
+footer {
+  background-color: var(--nord6);
+  color: var(--nord0);
+  height: 100px;
+  text-align: center;
+}
+
+footer img {
+  width: 35px;
+  padding: 5px;
+}
