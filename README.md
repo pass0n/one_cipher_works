@@ -81,5 +81,3 @@ Você pode visualizar o layout do projeto através do [link no Figma](https://ww
 Esse projeto está sob a licença MIT.
 
 ---
-
-Feito por mim!
