@@ -23,24 +23,23 @@ Construa um decodificador de texto com Javascript
   <img alt="Prévia" src="assets/img/.github/previa.png" width="100%">
 </p>
 
-
-## 🚀 Tecnologias
+## Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML
-- CSS
-- JavaScript
-- Git
-- Github
+-  HTML
+-  CSS
+-  JavaScript
+-  Git
+-  Github
 
-## 💻 Projeto
+## Projeto
 
-Decodificador de texto desenvolvido durante o desafio do Projeto ONE da Oracle+Alura LATAM. O objetivo deste desafio é criar uma página web que seja capaz de criptografar e descriptografar textos digitados pelo usuário, apresentando o resultado em sua forma correspondente. O desafio tem como propósito testar e avaliar os conhecimentos adquiridos durante o curso "Iniciante em Programação".
+O projeto One Cipher Works é um decodificador de texto desenvolvido durante o desafio ONE Project pela Oracle+Alura LATAM. O objetivo principal deste desafio é criar uma página web que possa criptografar e descriptografar textos digitados pelo usuário, exibindo o resultado correspondente. O projeto serve como um exercício para testar e avaliar os conhecimentos adquiridos durante o curso "Iniciante em Programação".
 
-### :lock: Chaves de criptografia
+## Chaves de criptografia
 
-- As chaves de criptografia solicitadas são as seguintes:
+-  As chaves de criptografia solicitadas são as seguintes:
 
 ```
 A letra "a" é convertida em "ai".
@@ -50,34 +49,35 @@ A letra "o" é convertida em "ober".
 A letra "u" é convertida em "ufat".
 ```
 
-### :ballot_box_with_check: Requisitos
+## Requisitos
 
-- Deve funcionar apenas com letras minúsculas.
-- Não devem ser utilizadas letras com acentos ou caracteres especiais.
-- Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para sua versão original.
+-  Deve funcionar apenas com letras minúsculas.
+-  Não devem ser utilizadas letras com acentos ou caracteres especiais.
+-  Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para sua versão original.
 
 ```
 Por exemplo:
 "gato" => "gaitober"
 "gaitober" => "gato"
 ```
-- A página deve ter campos para inserção do texto que será criptografado ou descriptografado, e o usuário deve poder escolher entre as duas opções.
-- O resultado deve ser exibido na tela.
 
-#### Extras:
+-  A página deve ter campos para inserção do texto que será criptografado ou descriptografado, e o usuário deve poder escolher entre as duas opções.
+-  O resultado deve ser exibido na tela.
 
-- Um botão que copie o texto criptografado/descriptografado para a área de transferência, ou seja, que tenha a mesma funcionalidade do Ctrl+C ou da opção "copiar" do menu de aplicativos.
+#### Recurso Adicional:
 
-## 💻 Demonstração
+-  Um botão que copie o texto criptografado/descriptografado para a área de transferência, proporcionando uma maneira conveniente de copiar a saída.
 
-https://pass0n.github.io/one_cipher_works/
+## Demonstração
 
-## 🔖 Layout
+Uma demonstração ao vivo do projeto pode ser acessada [aqui](https://pass0n.github.io/one_cipher_works/).
 
-Você pode visualizar o layout do projeto através do [link no Figma](https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=16-802).
+## Layout
 
-## :memo: Licença
+O layout do projeto pode ser visualizado no Figma [aqui](https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=16-802).
 
-Esse projeto está sob a licença MIT.
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Para mais informações, consulte o arquivo [LICENSE](./LICENSE).
 
 ---
