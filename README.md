@@ -20,7 +20,7 @@ Construa um decodificador de texto com Javascript
 <br>
 
 <p align="center">
-  <img alt="Prévia" src="assets/img/.github/previa.png" width="100%">
+  <img alt="Prévia" src="assets/.github/previa.png" width="100%">
 </p>
 
 ## Tecnologias
