@@ -1,131 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("./__button.css");
 
 :root {
-    --nord0:  #2e3440;
-    --nord1:  #3b4252;
-    --nord2:  #434c5e;
-    --nord3:  #4c566a;
-    --nord4:  #d8dee9;
-    --nord5:  #e5e9f0;
-    --nord6:  #eceff4;
-    --nord7:  #8fbcbb;
-    --nord8:  #88c0d0;
-    --nord9:  #81a1c1;
-    --nord10: #5e81ac;
-    --nord11: #bf616a;
-    --nord12: #d08770;
-    --nord13: #ebcb8b;
-    --nord14: #a3be8c;
-    --nord15: #b48ead;
+  --color1: #262626;
+  --color2: #eceff4;
+  --color3: #d8dee9;
+  --color4: #e5e9f0;
+  --color5: #2e3440;
+  font-size: 62.5%;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--nord6);
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background-color: var(--color2);
 }
 
 header {
-  background-color: var(--nord6);
-  color: var(--nord0);
-  height: 100px;
+  position: absolute;
+  margin: 2.78% 0 0 2.78%;
+}
+
+header h1 {
   display: flex;
   align-items: center;
-  margin-left: 150px;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: var(--color1);
 }
 
 header img {
-  width: 5%;
+  width: 4.8rem;
+  transform: rotate(90deg);
+  text-transform: uppercase;
 }
 
 main {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 8rem);
+  width: 100vw;
 }
 
-section {
-  width: 40%;
-  margin: 20px;
-  padding: 20px;
+.input-box {
+  width: calc(100% - (2.78% + 16.67% + 27.78% + 8rem));
+  margin: 16.8rem 2.78% 0 16.67%;
 }
 
-#inputArea {
-  width: 140%;
+#input-text {
   height: 80%;
+  width: 100%;
   border: none;
-  color: #0a3871;
-  margin-top: 65px;
+  resize: none;
+  font-size: 3.8rem;
   text-transform: lowercase;
-  font-size: 38px;
-  background-color: var(--nord6);
-  resize: none;
+  color: var(--color5);
+  background-color: var(--color2);
 }
+
 ::placeholder {
-  color: #0a3871;
+  color: var(--color5);
 }
-#inputArea:focus {
+
+#input-text:focus {
   outline: none;
 }
 
-#outputArea {
-  width: 60%;
+
+.output-box {
+  width: 27.78%;
+  height: calc(100vh - 8rem);
+  margin: 4rem;
+  padding: 3.2rem;
+  border-radius: 24px;
+  background-color: var(--color4);
+}
+
+#output-text {
   height: 100%;
-  margin-left: 40%;
+  width: 100%;
   border: none;
-  border-radius: 24px;
-  color: #0a3871;
-  padding: 5px 20px;
-  font-size: 28px;
   resize: none;
-  background-color: var(--nord5);
+  font-size: 2.4rem;
+  border-radius: 2.4rem;
+  color: var(--color5);
+  background-color: var(--color4);
 }
 
-#outputArea :focus {
+#output-text:focus {
   outline: none;
 }
 
-.sct-btn {
+i.icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  margin-right: 0.56%;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(/assets/img/bi_exclamation-circle-fill.svg);
+}
+
+.output-container {
+  height: 80%;
+  display: none;
+}
+
+.empty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--color1);
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 3.2rem 3.2rem 13.1rem 3.2rem;
+}
+
+.empty-container h2 {
+  margin: 3.2rem 0 1.6rem 0;
+}
+
+.btn-container {
   margin-top: 15px;
+  font-size: 1.4rem;
+  color: var(--color1);
 }
 
-#btnCripto {
-  background-color: var(--nord3);
-  border: 1px solid var(--nord3);
-  border-radius: 24px;
-  color: white;
-  cursor: pointer;
-  padding: 20px;
-  width: 300px;
-  text-transform: uppercase;
+.btn-container p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.56%;
 }
-
-#btnDecripto {
-    background: var(--nord4);
-    border: 1px solid var(--nord3);
-    border-radius: 24px;
-    color: #0a3871;
-    cursor: pointer;
-    padding: 20px;
-    width: 300px;
-    margin-left: 25px;
-    text-transform: uppercase;
-  }
 
 footer {
-  background-color: var(--nord6);
-  color: var(--nord0);
-  height: 100px;
+  position: absolute;
+  right: 50%;
   text-align: center;
-}
-
-p {
-  margin: 0;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color1);
 }
 
 footer img {
-  width: 35px;
-  padding: 5px;
+  width: 3.5rem;
+  padding: .5rem;
 }
