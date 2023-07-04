@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <script src="./assets/script.js" defer></script>
-    <title>Decodificador Challenge</title>
-  </head>
-  <body>
-    <header>
-      <img src="./assets/img/c.png" alt="Logo do Decodificador" />
-      <h1>oder Alura</h1>
-    </header>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./css/style.css" />
+      <script src="./js/script.js" defer></script>
+      <link rel="shortcut icon" href="/assets/img/c.png" type="image/x-icon">
+      <title>Decodificador Challenge</title>
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <h1>
+               <img src="../assets/img/c.png" alt="Logo do Decodificador" />
+               ne_cipher_works
+            </h1>
+         </header>
 
-    <main>
-      <section>
-        <textarea id="inputArea" placeholder="Digite seu texto"></textarea>
-        <div class="sct-btn">
-          <button id="btnCripto">criptografar</button>
-          <button id="btnDecripto">descriptografar</button>
-        </div>
-      </section>
+         <main>
+            <section class="input-box">
+               <textarea
+                  id="input-text"
+                  placeholder="Digite seu texto"
+               ></textarea>
 
-      <section>
-        <textarea id="outputArea"></textarea>
-      </section>
-    </main>
+               <div class="btn-container">
+                  <p>
+                     <i class="icon"></i>
+                     Apenas letras minúsculas e sem acento.
+                  </p>
+                  <button id="btn-encrypt">criptografar</button>
+                  <button id="btn-decrypt">descriptografar</button>
+               </div>
+            </section>
 
-    <footer>
-      <p>&copy; Todos os direitos reservados</p>
-      <p>
-        <a href="https://github.com/pass0n"><img src="./assets/img/github.png" alt="github"></a>
-        <a href="https://www.linkedin.com/in/kayllon-passon/"><img src="./assets/img/linkedin.png" alt="linkedin"></a>
-      </p>
-    </footer>
-  </body>
+            <section class="output-box">
+               <div class="output-container">
+                  <textarea id="output-text"></textarea>
+                  <button class="copy-btn">copiar</button>
+               </div>
+
+               <div class="empty-container">
+                  <div>
+                     <img src="../assets/img/search.svg" alt="Procurando..." />
+                  </div>
+                  <h2>
+                     Nenhuma mensagem<br />
+                     encontrada
+                  </h2>
+                  <p>
+                     Digite um texto que você deseja<br />
+                     criptografar ou descriptografar.
+                  </p>
+               </div>
+            </section>
+         </main>
+
+         <footer>
+            <p>&copy; Todos os direitos reservados</p>
+            <a href="https://github.com/pass0n" target="_blank"
+               ><img src="/assets/img/github.png" alt="github"
+            /></a>
+            <a
+               href="https://www.linkedin.com/in/kayllon-passon/"
+               target="_blank"
+               ><img src="/assets/img/linkedin.png" alt="linkedin"
+            /></a>
+         </footer>
+      </div>
+   </body>
 </html>
